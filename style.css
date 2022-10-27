@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+main {
+	background-color: white;
+	margin: 0 30px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 300px);
+	}
+}
+
+main section {
+    padding: 25px;
+}
+
+.join {
+    background-color: white;
+}
+
+.join h1 {
+	color: hsl(179, 62%, 43%);
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+main .join p:nth-of-type(1) {
+	color: hsl(71, 73%, 54%);
+	font-weight: 700;
+	margin: 20px 0;
+}
+
+main .join p:nth-of-type(2) {
+	color: hsl(218, 22%, 67%);
+	line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+	main section {
+		padding: 30px;
+	}
+	.join {
+		grid-column: 1/3;
+	}
+
+	main .join p:nth-of-type(1) {
+		margin: 25px 0 10px;
+	}
+}
+
+.month {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.month h2 {
+	color: white;
+	font-size: 1rem;
+}
+.month .price {
+    display: flex;
+	align-items: center;
+	gap: 10px;
+    margin: 20px 0 10px;
+}
+
+.month .price p {
+	color: white;
+	font-size: 1.7rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.month .price span {
+	color: hsl(204, 43%, 93%);
+
+
+}
+.month > p{
+	color: hsl(204, 43%, 93%);
+	padding-bottom: 30px;
+}
+.month button {
+	color: white;
+	background-color: hsl(71, 73%, 54%);
+	width: 100%;
+	padding: 10px;
+	border-radius: 6px;
+	border: none;
+
+
+}
+
+.why {
+	background-color: hsl(179, 62%, 46%);;
+
+}
+
+.why h3 {
+	color: white;
+
+}
+
+.why p {
+	color: hsl(204, 43%, 93%);
+	padding-top: 20px;
+}
+
+
